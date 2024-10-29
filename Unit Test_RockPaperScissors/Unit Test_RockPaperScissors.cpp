@@ -9,8 +9,13 @@ namespace UnitTestRockPaperScissors
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(RockPaperScissors)
 		{
+			// testing the functionality of RockPaperScissors function using "Rock", and "Paper"
+			char* User1[] = { "Rock" };
+			char* User2[] = { "Paper" };
+			char* result[] = RockPaperScissors();
+			Assert::AreEqual("Player2", result);
 		}
 	};
 }
