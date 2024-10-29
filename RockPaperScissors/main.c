@@ -15,10 +15,25 @@ char RockPaperScissors(char* inp1, char* inp2);
 
 int main(void) {
 
-
 	return 0;
 }
 
 char RockPaperScissors(char* inp1, char* inp2) {
-	return "";
+
+	// Draw
+
+
+	// Player1
+	
+
+	// Player2
+	if ((inp1 == "Rock") && (inp2 == "Paper")) {
+		char output[] = { "Player2" };
+		return output;
+	}
+		
+
+	//invalid
+	char output[] = { "Invalid" };
+	return output;
 }
