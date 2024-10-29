@@ -11,8 +11,14 @@
 // the output array must be one of the following
 // "Player1", "Player2", "Draw", "Invalid"
 
+char RockPaperScissors(char* inp1, char* inp2);
+
 int main(void) {
 
 
 	return 0;
+}
+
+char RockPaperScissors(char* inp1, char* inp2) {
+	return "";
 }
