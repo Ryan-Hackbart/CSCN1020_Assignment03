@@ -23,15 +23,20 @@ int main(void) {
 char* RockPaperScissors(char* inp1, char* inp2) {
 
 	// Draw
-
+	if ((strcmp(inp1, "Rock") == 0) && (strcmp(inp2, "Rock") == 0))
+		return "Draw";
+	if ((strcmp(inp1, "Paper") == 0) && (strcmp(inp2, "Paper") == 0))
+		return "Draw";
+	if ((strcmp(inp1, "Scissors") == 0) && (strcmp(inp2, "Scissors") == 0))
+		return "Draw";
 
 	// Player1
 	if ((strcmp(inp1, "Rock") == 0) && (strcmp(inp2, "Scissors") == 0))
-		return "Player2";
+		return "Player1";
 	if ((strcmp(inp1, "Paper") == 0) && (strcmp(inp2, "Rock") == 0))
-		return "Player2";
+		return "Player1";
 	if ((strcmp(inp1, "Scissors") == 0) && (strcmp(inp2, "Paper") == 0))
-		return "Player2";
+		return "Player1";
 
 	// Player2
 	if ((strcmp(inp1, "Rock") == 0) && (strcmp(inp2, "Paper") == 0))
@@ -41,9 +46,6 @@ char* RockPaperScissors(char* inp1, char* inp2) {
 	if ((strcmp(inp1, "Scissors") == 0) && (strcmp(inp2, "Rock") == 0))
 		return "Player2";
 
-
-
-		
 
 	//invalid
 	return "Invalid";
