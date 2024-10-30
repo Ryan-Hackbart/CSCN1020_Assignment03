@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // ryanh - fall24 - CSCN1020 - assign03
 
@@ -15,9 +16,6 @@ char* RockPaperScissors(char* inp1, char* inp2);
 
 int main(void) {
 
-	char User1[] = { "Rock" };
-	char User2[] = { "Paper" };
-	printf("%c", RockPaperScissors(User1, User2));
 
 	return 0;
 }
@@ -31,10 +29,11 @@ char* RockPaperScissors(char* inp1, char* inp2) {
 	
 
 	// Player2
-	if ((inp1 == "Rock") && (inp2 == "Paper")) {
-		char output[] = { "Player2" };
-		return output;
-	}
+	if ((strcmp(inp1, "Rock") == 0) && (strcmp(inp2, "Paper") == 0))
+		return "Player2";
+
+
+
 		
 
 	//invalid
