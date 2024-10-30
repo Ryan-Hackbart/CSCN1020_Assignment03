@@ -26,10 +26,19 @@ char* RockPaperScissors(char* inp1, char* inp2) {
 
 
 	// Player1
-	
+	if ((strcmp(inp1, "Rock") == 0) && (strcmp(inp2, "Scissors") == 0))
+		return "Player2";
+	if ((strcmp(inp1, "Paper") == 0) && (strcmp(inp2, "Rock") == 0))
+		return "Player2";
+	if ((strcmp(inp1, "Scissors") == 0) && (strcmp(inp2, "Paper") == 0))
+		return "Player2";
 
 	// Player2
 	if ((strcmp(inp1, "Rock") == 0) && (strcmp(inp2, "Paper") == 0))
+		return "Player2";
+	if ((strcmp(inp1, "Paper") == 0) && (strcmp(inp2, "Scissors") == 0))
+		return "Player2";
+	if ((strcmp(inp1, "Scissors") == 0) && (strcmp(inp2, "Rock") == 0))
 		return "Player2";
 
 
