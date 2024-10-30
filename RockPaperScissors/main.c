@@ -11,14 +11,18 @@
 // the output array must be one of the following
 // "Player1", "Player2", "Draw", "Invalid"
 
-char RockPaperScissors(char* inp1, char* inp2);
+char* RockPaperScissors(char* inp1, char* inp2);
 
 int main(void) {
+
+	char User1[] = { "Rock" };
+	char User2[] = { "Paper" };
+	printf("%c", RockPaperScissors(User1, User2));
 
 	return 0;
 }
 
-char RockPaperScissors(char* inp1, char* inp2) {
+char* RockPaperScissors(char* inp1, char* inp2) {
 
 	// Draw
 
@@ -34,6 +38,5 @@ char RockPaperScissors(char* inp1, char* inp2) {
 		
 
 	//invalid
-	char output[] = { "Invalid" };
-	return output;
+	return "Invalid";
 }
